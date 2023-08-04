@@ -1,12 +1,12 @@
 :root {
   --color: #f14e95;
   --bg: #0a0a0a;
-  --shadow: 0 2px 2px rgb(0 0 0/0.5);
+  --shadow: 0 2px 2px rgb(0 0 0/0.8);
 }
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 2000px;
+  min-height: 4000px;
 }
 .hero::before {
   content: "";
@@ -14,7 +14,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-prewed.jpg);
+  background-image: url(img/wedding2.jpg);
+  background-size: cover;
+  background-position: center;
   z-index: -1;
 }
 
@@ -22,15 +24,25 @@ body {
   position: relative;
   min-height: 100vh;
 }
-.hero h1, .hero h4, .hero p{
-  text-shadow: var(--shadow);
-
+.hero h1,
+.hero h2,
+.hero h4,
+.hero p {
+  color: var(--bg);
 }
 .hero h1 {
   font-family: "Satisfy", cursive;
-  font-size: 6rem;
+  font-size: 8rem;
+  color: var(--color);
+  text-shadow: var(--shadow);
 }
-
+.hero h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 4rem;
+  color: var(--color);
+  text-shadow: var(--shadow);
+  padding-bottom: 10px;
+}
 .hero p {
   font-size: 1.4rem;
 }
@@ -44,36 +56,54 @@ body {
   background-color: var(--color);
   color: white;
 }
-
+/* .mynavbar {
+} */
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Satisfy", cursive;
+  font-size: 2.6rem;
+}
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+/* .home {
+  display: flex;
+  justify-items: center;
+  background-image: url(img/wedding1.jpg);
+  background-size: cover;
+  min-height: 100vh;
+} */
 /*Media Query*/
 /*Laptop*/
-@media (max-width: 992px){
-  html{
+@media (max-width: 992px) {
+  html {
     font-size: 75%;
   }
-  .simply-countdown > .simply-section{
+  .simply-countdown > .simply-section {
     padding: 70px;
   }
 }
 
-
 /*Tablet*/
-@media (max-width: 768px){
-  html{
+@media (max-width: 768px) {
+  html {
     font-size: 65%;
   }
-  .simply-countdown > .simply-section{
+  .simply-countdown > .simply-section {
     padding: 60px;
     margin: 5px;
   }
-  
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 /*HP*/
-@media (max-width: 576px){
-  html{
+@media (max-width: 576px) {
+  html {
     font-size: 55%;
   }
-  .simply-countdown > .simply-section{
+  .simply-countdown > .simply-section {
     padding: 40px;
     margin: 2.5px;
   }
