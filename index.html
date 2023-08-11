@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Website Undangan Pernikahan</title>
+    <link rel="icon" href="img/weddingicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -63,7 +64,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="offcanvas offcanvas-end"
+          class="offcanvas offcanvas-start show"
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
@@ -85,13 +86,12 @@
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#reservasi">Reservasi</a>
-              <a class="nav-link" href="#hadiah">Hadiah</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
+    <!-- Navbar MEnu End -->
     <!--Home Menu Start-->
     <section class="home" id="home">
       <div class="container">
@@ -230,11 +230,239 @@
       </div>
     </section>
     <!-- Info Menu End -->
+    <!-- Story Menu Start-->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Perjalan cinta kami.</span>
+            <h2>Our Story</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              enim ipsum quam fuga eum neque!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/school.png)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>1 Januari 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Repudiandae voluptas cumque dignissimos aperiam deserunt,
+                      ab aliquam dolore dolores.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-right">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/200/300)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>1 Januari 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum quis, nemo cupiditate quos eligendi eos.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/201/301)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>1 Januari 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aut est alias eos dolores harum, recusandae iusto totam
+                      doloribus repellendus eaque.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-right">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/202/302)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Lamaran</h3>
+                    <span>1 Januari 2020</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum quis, nemo cupiditate quos eligendi eos.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Story Menu End-->
+    <!-- Gallery Menu Start -->
+    <section class="gallery" id="gallery">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>Gallery</span>
+          <h2>Gallery Foto</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis enim
+            ipsum quam fuga eum neque!
+          </p>
+        </div>
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a
+              href="img/gallery/gallery-head.jpg"
+              data-toggle="lightbox"
+              data-caption="Photo 1"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/49/301/401"
+                alt="Photo 1"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/153/1200/768"
+              data-toggle="lightbox"
+              data-caption="Photo 2"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/53/301/401"
+                alt="Photo 2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/165/1200/768"
+              data-toggle="lightbox"
+              data-caption="Photo 3"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/69/300/400"
+                alt="Photo 3"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/201/1200/768"
+              data-toggle="lightbox"
+              data-caption="Photo 4"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/199/300/400"
+                alt="Photo 4"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/123/1200/768"
+              data-toggle="lightbox"
+              data-caption="Photo 5"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/78/300/400"
+                alt="Photo 5"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/101/1200/768"
+              data-toggle="lightbox"
+              data-caption="Photo 6"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/79/302/402"
+                alt="Photo 6"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/182/1200/768"
+              data-toggle="lightbox"
+              data-caption="Photo 7"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/67/303/402"
+                alt="Photo 7"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/190/1200/768"
+              data-toggle="lightbox"
+              data-caption="Photo 8"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/188/305/409"
+                alt="Photo 8"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Menu End -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
     <!--JS Countdown-->
     <script>
