@@ -81,18 +81,18 @@ body {
   background-image: url(img/bg-navbar-pink.png);
   background-size: cover;
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 30rem;
   padding-bottom: 8rem;
 }
 .gallery, .gift {
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 30rem;
   padding-bottom: 8rem;
 }
 
 .info {
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 30rem;
   padding-bottom: 10rem;
   background-color: var(--bg);
 }
@@ -285,7 +285,7 @@ body {
 
 .reservasi {
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 30rem;
   padding-bottom: 10rem;
   background-color: var(--bg);
 }
