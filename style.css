@@ -57,32 +57,64 @@ body {
   color: white;
 }
 .mynavbar {
-  /* background-color: rgba(8, 189, 221, 0.514) !important;
-  backdrop-filter: blur(4px); */
-  background-image: url(img/bg-navbar-pink.png);
+  background-color: var(--bg)!important;
 }
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: "Satisfy", cursive;
   font-size: 2.6rem;
+  color: var(--color);
 }
 .mynavbar .nav-link {
   text-transform: uppercase;
+  color: var(--color);
 }
+
+.mynavbar .nav-link:hover {
+  color: white;
+  
+}
+
 .home,
-.info,
-.story,
-.gallery {
+
+.story{
   background-image: url(img/bg-navbar-pink.png);
   background-size: cover;
   min-height: 100vh;
   padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.gallery, .gift {
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info {
+  min-height: 100vh;
+  padding-top: 10rem;
   padding-bottom: 10rem;
+  background-color: var(--bg);
+}
+.info h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: var(--color);
+
 }
 .home h2,
-.info h2,
+.gift h2,
 .story h2,
 .gallery h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.reservasi h2 {
+  color: var(--color);
   font-family: "Satisfy", cursive;
   font-size: 5rem;
   font-weight: bold;
@@ -118,16 +150,20 @@ body {
 }
 .info .alamat {
   font-size: 1.1rem;
+  color: #fff;
 }
 
 .info .deskripsi {
   font-size: 1rem;
   font-weight: 300;
+  color: #fff;
 }
 .info .card {
   /* background-color: rgba(255, 255, 255, 0.2) !important; */
-  background-image: url(img/bg-navbar-pink.png);
   border: 1px solid #999;
+  color: #fff;
+  background-image: url(img/bg-navbar-pink.png);
+
 }
 .info .card-header {
   text-transform: uppercase;
@@ -143,7 +179,8 @@ body {
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gift span {
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -152,7 +189,8 @@ body {
 }
 
 .story p,
-.gallery p {
+.gallery p,
+.gift p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -245,10 +283,44 @@ body {
   right: auto;
 }
 
-.gallery {
-  background-color: #444;
+.reservasi {
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: var(--bg);
 }
-
+.reservasi p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.reservasi form label {
+  color: white;
+}
+.reservasi button {
+  background-color: var(--color);
+  color: white;
+  border: 1px solid var(--color);
+}
+.reservasi button:hover {
+  background-color: white;
+  color: var(--color);
+  border: 1px solid white;
+}
+footer {
+  padding: 3rem;
+  background-color: var(--bg);
+  color: var(--color);
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  color:var(--color);
+}
+footer a:hover {
+  color:white;
+}
 /*Media Query*/
 /* Extra Large */
 @media (max-width: 1200px) {
