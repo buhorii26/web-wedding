@@ -59,8 +59,7 @@ body {
 .mynavbar {
   background-color: var(--bg)!important;
 }
-.mynavbar .navbar-brand,
-.mynavbar .offcanvas-title {
+.mynavbar .navbar-brand {
   font-family: "Satisfy", cursive;
   font-size: 2.6rem;
   color: var(--color);
@@ -81,18 +80,18 @@ body {
   background-image: url(img/bg-navbar-pink.png);
   background-size: cover;
   min-height: 100vh;
-  padding-top: 30rem;
+  padding-top: 5rem;
   padding-bottom: 8rem;
 }
 .gallery, .gift {
   min-height: 100vh;
-  padding-top: 30rem;
+  padding-top: 5rem;
   padding-bottom: 8rem;
 }
 
 .info {
   min-height: 100vh;
-  padding-top: 30rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
   background-color: var(--bg);
 }
@@ -138,12 +137,14 @@ body {
   width: 100%;
 }
 .home .heart {
-  width: 50px;
-  height: 50px;
+  width: 5px;
+  height: 5px;
   display: flex;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(65px);
+  right: 50%;
+  transform: translateX(-50%) translateY(50px);
+  font-size: 3rem;
+  color: var(--color);
 }
 .home .heart i {
   margin: auto;
@@ -285,7 +286,7 @@ body {
 
 .reservasi {
   min-height: 100vh;
-  padding-top: 30rem;
+  padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: var(--bg);
 }
@@ -320,6 +321,34 @@ footer a {
 }
 footer a:hover {
   color:white;
+}
+
+.audio-icon{
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  color:var(--color);
+  cursor: pointer;
+  opacity: 50%;
+  mix-blend-mode: difference;
+  animation: discmuter 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+@keyframes discmuter {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
 }
 /*Media Query*/
 /* Extra Large */
